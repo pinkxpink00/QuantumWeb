@@ -9,6 +9,6 @@ namespace Notes.Domain
         public string Title { get; set; } // Заголовок запису
         public string Details { get; set; } // Деталі запису
         public DateTime CreationDate { get; set; } // Дата створення запису
-        public DateTime EditDate { get; set; } // Дата останньої редагування запису
+        public DateTime? EditDate { get; set; } // Дата останньої редагування запису
     }
 }
