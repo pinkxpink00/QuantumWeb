@@ -2,17 +2,18 @@
 using Notes.Application.Common.Mappings;
 using Notes.Domain;
 
-
 namespace Notes.Application.Notes.Queries.GetNoteDetails
 {
+    // ViewModel для відображення деталей нотатки
     public class NoteDetailsVm : IMapWith<Note>
     {
-        public Guid Id { get; set; }
-        public string Title { get; set; }
-        public string Details { get; set; }
-        public DateTime CreationDate {  get; set; }
-        public DateTime? EditDate { get; set; }
+        public Guid Id { get; set; } // Ідентифікатор нотатки
+        public string Title { get; set; } // Заголовок нотатки
+        public string Details { get; set; } // Деталі нотатки
+        public DateTime CreationDate { get; set; } // Дата створення
+        public DateTime? EditDate { get; set; } // Дата останнього редагування
 
+        // Метод для виконання мапінгу
         public void Mapping(Profile profile)
         {
             profile.CreateMap<Note, NoteDetailsVm>()

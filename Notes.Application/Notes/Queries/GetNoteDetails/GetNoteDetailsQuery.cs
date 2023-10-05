@@ -7,8 +7,9 @@ using MediatR;
 
 namespace Notes.Application.Notes.Queries.GetNoteDetails
 {
+    // Запит для отримання деталей нотатки
     public class GetNoteDetailsQuery : IRequest<NoteDetailsVm>
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } // Ідентифікатор нотатки
     }
 }
