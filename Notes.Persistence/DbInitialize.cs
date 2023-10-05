@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notes.Persistence.EntityTypeConfiguration
+namespace Notes.Persistence
 {
     // Клас для ініціалізації бази даних. У даному випадку, метод "Initialize" просто перевіряє, чи створена база даних.
     public class DbInitialize

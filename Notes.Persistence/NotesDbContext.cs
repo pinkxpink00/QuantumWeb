@@ -3,7 +3,7 @@ using Notes.Domain;
 using Notes.Application.Interfaces;
 using Notes.Persistence.EntityTypeConfiguration;
 
-namespace Notes.Persistence.EntityTypeConfiguration
+namespace Notes.Persistence
 {
     // Клас, який реалізує інтерфейс INotesDbContext і представляє контекст бази даних записів.
     public class NotesDbContext : DbContext, INotesDbContext
